@@ -20,10 +20,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Do not go gentle into that good night">
+  <meta property="og:title" content="02-installation.md">
   <meta property="og:description" content="I turn coffee :coffee: into code, use tabs over spaces and never broke production.">
 
-  <title>Do not go gentle into that good night</title>
+  <title>02-installation.md</title>
   <meta name="description" content="I turn coffee :coffee: into code, use tabs over spaces and never broke production.">
 
   
@@ -59,7 +59,7 @@
     <div class="navbar-nav ml-auto">
 <a class="nav-item nav-link " href="/projects/">Projects</a>
 
-      <a class="nav-item nav-link active" href="/blog/">Blog</a>
+      <a class="nav-item nav-link " href="/blog/">Blog</a>
 
       <a class="nav-item nav-link " href="/about/">About</a>
 
@@ -76,46 +76,50 @@
 
 </nav>
   <div class="col-lg-10 mx-auto mt-5 post">
-  <h1><b>Do not go gentle into that good night</b></h1>
+  <h2 id="installation">Installation</h2>
 
-<p class="post-metadata text-muted">
-  17 April 2016 -  
-  <b>less than 1 min read time</b>
+<p>The following steps demonstrate how to use portfolYOU as <strong>GitHub Pages remote theme</strong>.</p>
 
-  <br>Tags: 
-    
-    <a class="text-decoration-none no-underline" href="/blog/tags#poetry">
-      <span class="tag badge badge-pill text-primary border border-primary">Poetry</span>
-    </a>
-    </p>
+<ol>
+  <li>
+<a href="https://github.com/commandantekaustav/portfolYOU/zipball/gh-pages">Download</a> portfolYOU as .zip from official <a href="https://github.com/commandantekaustav/portfolYOU">repo</a> then extract it.</li>
+  <li>Rename <strong><code class="language-plaintext highlighter-rouge">portfolYOU-master/</code></strong> to <strong><code class="language-plaintext highlighter-rouge">&lt;your-username&gt;.github.io/</code></strong>
+</li>
+  <li>Remove everything <strong>except</strong> the <strong><code class="language-plaintext highlighter-rouge">docs/</code></strong> directory.</li>
+  <li>Lift up the <strong><code class="language-plaintext highlighter-rouge">docs/</code></strong> directory’s content to the root directory <em>(i.e move them to <strong><code class="language-plaintext highlighter-rouge">&lt;your-username&gt;.github.io/</code></strong>)</em>.</li>
+  <li>Remove <strong>documentation</strong> stuff:
+    <ul>
+      <li><strong><code class="language-plaintext highlighter-rouge">_elements/</code></strong></li>
+      <li><strong><code class="language-plaintext highlighter-rouge">documentation/</code></strong></li>
+      <li>
+<strong><code class="language-plaintext highlighter-rouge">_config.yml</code></strong> : any line commented as <code class="language-plaintext highlighter-rouge"># For Documentation Only</code>
+</li>
+    </ul>
+  </li>
+  <li>
+    <p>Your directory structure should be:</p>
 
-<p>Do not go gentle into that good night,<br>
-Old age should burn and rave at close of day;<br>
-Rage, rage against the dying of the light.</p>
+    <pre><code class="language-tree"> &lt;your-username&gt;.github.io/
+ ├── _data/
+ ├── _posts/
+ ├── _projects/
+ ├── pages/
+ ├── _config.yml
+ ├── .gitignore
+ └── Gemfile
+</code></pre>
+  </li>
+  <li>Update <strong><code class="language-plaintext highlighter-rouge">_config.yml</code></strong> with your data <em>(follow the comments for more help)</em>.</li>
+  <li>Update your site content (posts, projects and about page).</li>
+  <li>Finally, test portfolYOU <a href="https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/">locally</a> then <a href="https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/">publish</a> it to <a href="https://pages.github.com/">GitHub Pages</a>.</li>
+  <li>
+    <p><em>[Optional]</em> To use a specific <a href="https://github.com/commandantekaustav/portfolYOU/releases">version</a> of portfolYOU <em>(defaults to latest version)</em>:</p>
 
-<p>Though wise men at their end know dark is right,<br>
-Because their words had forked no lightning they<br>
-Do not go gentle into that good night.</p>
-
-<p>Good men, the last wave by, crying how bright<br>
-Their frail deeds might have danced in a green bay,<br>
-Rage, rage against the dying of the light.</p>
-
-<p>Wild men who caught and sang the sun in flight,<br>
-And learn, too late, they grieved it on its way,<br>
-Do not go gentle into that good night.</p>
-
-<p>Grave men, near death, who see with blinding sight<br>
-Blind eyes could blaze like meteors and be gay,<br>
-Rage, rage against the dying of the light.</p>
-
-<p>And you, my father, there on the sad height,<br>
-Curse, bless, me now with your fierce tears, I pray.<br>
-Do not go gentle into that good night.<br>
-Rage, rage against the dying of the light.</p>
-
-<p>— <em>Dylan Thomas, 1914 - 1953</em></p>
-
+    <div class="language-yml highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="na">remote_theme</span><span class="pi">:</span> <span class="s">YoussefRaafatNasry/portfolYOU@v1.0.0</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
 
 
 </div>
